@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Blog</title>
+    <meta name="description" content="Página web de blog de café">
+
+    <!-- Prefetch -->
+    <link rel="prefetch" href="us.html" as="document">
+
+    <!-- Preload -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"  crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Coffee<span class="logo__bold">Blog</span></h1>
+                </a>
+
+                <nav class="navegacion">
+                    <a href="us.html" class="navegacion__enlace">Us</a>
+                    <a href="courses.html" class="navegacion__enlace">Courses</a>
+                    <a href="contact-us.html" class="navegacion__enlace">Contact Us</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="header__texto">
+            <h2 class="no-margin">Coffee Blog with Tips and Courses</h2>
+            <p class="no-margin">Learn from the Experts with the Best Recipes and Advice</p>
+        </div>
+    </header>
+
+    <div class="contenedor contenido-principal">
+        <main class="blog">
+            <h3>Our Blog</h3>
+
+            <article class="entrada">
+                <div class="entrada__imagen">
+                    <picture>
+                        <source loading="lazy"  srcset="img/blog1.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog1.jpg" alt="imagen blog"> 
+                    </picture>
+                </div>
+
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">Types of Coffee Beans</h4>
+                    <p>Coffee beans are the heart and soul of every cup of coffee, capturing the essence of the world's most beloved beverage. These small, unassuming seeds are the result of a meticulous process that starts with cultivation, harvesting, and careful processing. At our coffee blog, we celebrate the wonders of coffee beans, sharing brewing tips, techniques, and the best coffee recipes. Embrace the world of coffee beans with us, and embark on a flavorful journey that will awaken your senses and elevate your coffee experience to new heights. Cheers to the magic of coffee beans!</p>
+                    <a href="entrada.html" class="boton boton--primario">Read More</a>
+                </div>
+            </article>
+
+            <article class="entrada">
+                <div class="entrada__imagen">
+                    <picture>
+                        <source loading="lazy"  srcset="img/blog2.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog2.jpg" alt="imagen blog"> 
+                    </picture>
+                </div>
+
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">3 delicious coffee recipes</h4>
+                    <p>In the world of coffee aficionados, there is a ritual that goes beyond mere caffeine cravings. It's an art form, a dance between science and passion, where every step is imbued with dedication and love. Welcome to the realm of exquisite coffee brewing, where we unveil the secrets of creating a cup of bliss.</p>
+                    <a href="entrada.html" class="boton boton--primario">Read More</a>
+                </div>
+            </article>
+
+            <article class="entrada">
+                <div class="entrada__imagen">
+                    <picture>
+                        <source loading="lazy"  srcset="img/blog3.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog3.jpg" alt="imagen blog"> 
+                    </picture>
+                </div>
+
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">Coffee Benefits</h4>
+                    <p>Improved Liver Health: Coffee has been linked to a reduced risk of liver diseases, including liver cirrhosis and non-alcoholic fatty liver disease (NAFLD). The antioxidants in coffee may play a role in promoting liver health</p>
+                    <a href="entrada.html" class="boton boton--primario">Read More</a>
+                </div>
+            </article>
+        </main>
+        <aside class="sidebar">
+            <h3>Our Courses and Workshops</h3>
+
+            <ul class="cursos no-padding">
+                <li class="widget-curso">
+                    <h4 class="no-margin">Coffee Extraction Techniques</h4>
+                    <p class="widget-curso__label">Price: 
+                        <span class="widget-curso__info">Free</span>
+                    </p>
+                    <p class="widget-curso__label">Slots: 
+                        <span class="widget-curso__info">20</span>
+                    </p>
+                    <a href="entrada.html" class="boton boton--secundario">More Information about our courses</a>
+                </li>
+
+                <li class="widget-curso">
+                    <h4 class="no-margin">4 Coffee Recipes for Beginners</h4>
+                    <p class="widget-curso__label">Price: 
+                        <span class="widget-curso__info">Free</span>
+                    </p>
+                    <p class="widget-curso__label">Slots: 
+                        <span class="widget-curso__info">20</span>
+                    </p>
+                    <a href="entrada.html" class="boton boton--secundario">More Information about our courses</a>
+                </li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Coffee<span class="logo__bold">Blog</span></h1>
+                </a>
+
+                <nav class="navegacion">
+                    <a href="us.html" class="navegacion__enlace">Us</a>
+                    <a href="courses.html" class="navegacion__enlace">Courses</a>
+                    <a href="contact-us.html" class="navegacion__enlace">Contact Us</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/modernizr.js"></script>
+</body>
+</html>
